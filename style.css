@@ -1,0 +1,165 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --background: #fafafa;
+  --text: #4d4f62;
+  --blue: #44d3d2;
+  --orange: #fcae4a;
+  --darkblue: #549ef2;
+  --red: #ea5454;
+}
+
+body {
+  background-color: var(--background);
+  font-family: "Poppins", sans-serif;
+  padding: 85px 32px 78px 32px;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.first-header-text {
+  font-size: 24px;
+  font-weight: 275;
+  line-height: 36px;
+  letter-spacing: 0.17px;
+  color: var(--text);
+}
+
+.second-header-text {
+  font-size: 24px;
+  font-weight: 600;
+  line-height: 36px;
+  letter-spacing: 0.17px;
+  color: var(--text);
+}
+
+.paragraph-text {
+  font-weight: 400;
+  font-size: 15px;
+  line-height: 25px;
+  letter-spacing: 0.1px;
+  color: var(--text);
+  margin-top: 16px;
+  opacity: 0.5;
+}
+
+.card-section {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.card {
+  width: 100%;
+  padding-bottom: 28px;
+  background-color: white;
+  box-shadow: 0px 15px 30px -11px rgba(131, 166, 210, 0.5);
+  border-radius: 8px;
+  text-align: left;
+  overflow: hidden;
+}
+
+.first {
+  margin-top: 76px;
+}
+
+.card-header {
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 30px;
+  color: var(--text);
+}
+
+.card-paragraph {
+  font-weight: 400;
+  font-size: 13px;
+  line-height: 23px;
+  letter-spacing: 0.09px;
+  color: var(--text);
+  opacity: 50%;
+}
+
+.icon {
+  margin-top: 33px;
+  width: 57px;
+  height: 57px;
+  margin-left: auto;
+}
+
+.border {
+  width: 100%;
+  height: 3.66px;
+  background-color: var(--blue);
+}
+
+.content {
+  margin-top: 27px;
+  padding: 0 28px;
+  display: flex;
+  flex-direction: column;
+}
+
+.second {
+  margin-top: 25px;
+}
+.second .border {
+  background-color: var(--red);
+}
+
+.third {
+  margin-top: 23px;
+}
+
+.third .border {
+  background-color: var(--orange);
+}
+
+.fourth {
+  margin-top: 17px;
+}
+
+.fourth .border {
+  background-color: var(--darkblue);
+}
+
+@media (min-width: 1440px) {
+  .first-header-text,
+  .second-header-text {
+    font-size: 36px;
+    line-height: 54px;
+    letter-spacing: 0.25px;
+  }
+  .card {
+    height: 250px;
+    width: 350px;
+  }
+  .card-section {
+    flex-direction: row;
+    justify-content: center;
+    margin-top: 68px;
+    column-gap: 30px;
+  }
+
+  .first,
+  .second,
+  .fourth {
+    margin-top: 0;
+  }
+
+  .third {
+    margin-top: 30px;
+  }
+
+  .paragraph-text {
+    width: 540px;
+  }
+}
